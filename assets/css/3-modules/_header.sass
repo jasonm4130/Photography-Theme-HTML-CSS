@@ -1,0 +1,38 @@
+.navbar.navbar-default
+  background-color: #323232
+  border: none
+  border-radius: 0px
+  &:after
+    content: ""
+    border-bottom: 2px solid
+
+  .navbar-brand.navbar-brand-hidden
+    color: #fff
+    @media (min-width: 769px)
+      display: none
+  ul.nav.navbar-nav
+    float: none
+    display: inline-block
+
+    li
+      a
+        color: white
+
+    .navbar-brand
+      margin: 0 auto
+      text-align: center
+      &:after
+        content: ""
+        width: 0
+        border-top: 53px solid #323232
+        border-left: 90px solid transparent
+        border-right: 90px solid transparent
+        position: absolute
+        bottom: -53px
+        left: 50%
+        margin-left: -90px
+      @media (max-width: 768px)
+        display: none
+
+  .navbar-collapse
+    text-align: center
