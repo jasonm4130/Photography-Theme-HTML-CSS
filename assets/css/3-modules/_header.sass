@@ -33,21 +33,29 @@
         bottom: -53px
         left: 50%
         margin-left: -90px
+        z-index: 3
       @media (max-width: 768px)
         display: none
+      &:before
+        content: ""
+        width: 0
+        border-top: 64px solid #fff
+        border-left: 110px solid transparent
+        border-right: 110px solid transparent
+        position: absolute
+        bottom: -75px
+        left: 50%
+        margin-left: -110px
+        z-index: 2
 
   .navbar-collapse
     text-align: center
 
-.menu-underline-container
-  width: 90%
-  margin: 1px auto
-  .menu-underline
-    display: inline-flex
-    height: 1px
-    width: auto
-    border-bottom: 1px solid #e4e9eb
-    @media (max-width: 1200px)
-      width: 40%
-  .menu-underline-seperator
-    width: 52px
+div#navbar-collapse-1:after
+  content: ""
+  display: bloc
+  height: 1px
+  background: #e4e9eb
+  position: relative
+  width:100%
+  top: 10px
