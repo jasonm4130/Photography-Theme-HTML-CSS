@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
-  // Get started!
+// Initiate Unslider
+  $('.portfolio-slider').unslider();
 
 });
